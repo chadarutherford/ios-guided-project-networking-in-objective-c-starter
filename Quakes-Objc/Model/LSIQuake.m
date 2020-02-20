@@ -64,6 +64,9 @@
     }
     
     // check if required properties are non-nil, otherwise return nil
+    if ([magnitudeNumber isKindOfClass:[NSNull class]]) {
+        magnitudeNumber = nil;
+    }
     
     // alert is optional (can be null)
     if (!(magnitudeNumber || place || timeNumber || type || latitudeNumber || longitudeNumber)) {

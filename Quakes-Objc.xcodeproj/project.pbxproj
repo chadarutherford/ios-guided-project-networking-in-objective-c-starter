@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63C8FDB623FEFCA900086092 /* CARQuakeFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C8FDB523FEFCA900086092 /* CARQuakeFetcher.m */; };
+		63C8FDB923FEFF6800086092 /* CARQuakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C8FDB823FEFF6800086092 /* CARQuakeViewController.m */; };
 		BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */; };
 		BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */; };
 		BDFC8F8823FDA09F00A39B21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFC8F8723FDA09F00A39B21 /* ViewController.m */; };
@@ -45,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63C8FDB423FEFCA900086092 /* CARQuakeFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CARQuakeFetcher.h; sourceTree = "<group>"; };
+		63C8FDB523FEFCA900086092 /* CARQuakeFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CARQuakeFetcher.m; sourceTree = "<group>"; };
+		63C8FDB723FEFF6800086092 /* CARQuakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CARQuakeViewController.h; sourceTree = "<group>"; };
+		63C8FDB823FEFF6800086092 /* CARQuakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CARQuakeViewController.m; sourceTree = "<group>"; };
 		BDFC8F7D23FDA09F00A39B21 /* Quakes-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quakes-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +101,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63C8FDBA23FEFF9300086092 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8FBA23FDA13F00A39B21 /* JSON */,
+				BDFC8FB923FDA12F00A39B21 /* LambdaSDK */,
+				BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */,
+				BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */,
+				BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */,
+				BDFC8F9123FDA0A100A39B21 /* Info.plist */,
+				BDFC8F9223FDA0A100A39B21 /* main.m */,
+				BDFC8F8323FDA09F00A39B21 /* SceneDelegate.h */,
+				BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		63C8FDBB23FEFFD000086092 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63C8FDBD23FEFFE700086092 /* Model Controller */,
+				63C8FDBC23FEFFD700086092 /* View Controllers */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63C8FDBC23FEFFD700086092 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
+				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
+				63C8FDB723FEFF6800086092 /* CARQuakeViewController.h */,
+				63C8FDB823FEFF6800086092 /* CARQuakeViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		63C8FDBD23FEFFE700086092 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63C8FDB423FEFCA900086092 /* CARQuakeFetcher.h */,
+				63C8FDB523FEFCA900086092 /* CARQuakeFetcher.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		63C8FDBE23FEFFF800086092 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8F8923FDA09F00A39B21 /* Main.storyboard */,
+				BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		63C8FDBF23FF000800086092 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63C8FDBE23FEFFF800086092 /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63C8FDC023FF001100086092 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BDFC8FBB23FDA4FB00A39B21 /* LSIFirstResponder.h */,
+				BDFC8FBC23FDA4FB00A39B21 /* LSIFirstResponder.m */,
+				BDFC8FBF23FDAFB900A39B21 /* LSIQuake.h */,
+				BDFC8FC023FDAFB900A39B21 /* LSIQuake.m */,
+				BDFC8FC923FDC35900A39B21 /* LSIQuakeResults.h */,
+				BDFC8FCA23FDC35900A39B21 /* LSIQuakeResults.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BDFC8F7423FDA09F00A39B21 = {
 			isa = PBXGroup;
 			children = (
@@ -116,25 +197,10 @@
 		BDFC8F7F23FDA09F00A39B21 /* Quakes-Objc */ = {
 			isa = PBXGroup;
 			children = (
-				BDFC8F8023FDA09F00A39B21 /* AppDelegate.h */,
-				BDFC8F8123FDA09F00A39B21 /* AppDelegate.m */,
-				BDFC8F8323FDA09F00A39B21 /* SceneDelegate.h */,
-				BDFC8F8423FDA09F00A39B21 /* SceneDelegate.m */,
-				BDFC8F8623FDA09F00A39B21 /* ViewController.h */,
-				BDFC8F8723FDA09F00A39B21 /* ViewController.m */,
-				BDFC8FBB23FDA4FB00A39B21 /* LSIFirstResponder.h */,
-				BDFC8FBC23FDA4FB00A39B21 /* LSIFirstResponder.m */,
-				BDFC8FBF23FDAFB900A39B21 /* LSIQuake.h */,
-				BDFC8FC023FDAFB900A39B21 /* LSIQuake.m */,
-				BDFC8FC923FDC35900A39B21 /* LSIQuakeResults.h */,
-				BDFC8FCA23FDC35900A39B21 /* LSIQuakeResults.m */,
-				BDFC8F8923FDA09F00A39B21 /* Main.storyboard */,
-				BDFC8F8C23FDA0A100A39B21 /* Assets.xcassets */,
-				BDFC8F8E23FDA0A100A39B21 /* LaunchScreen.storyboard */,
-				BDFC8F9123FDA0A100A39B21 /* Info.plist */,
-				BDFC8FBA23FDA13F00A39B21 /* JSON */,
-				BDFC8FB923FDA12F00A39B21 /* LambdaSDK */,
-				BDFC8F9223FDA0A100A39B21 /* main.m */,
+				63C8FDC023FF001100086092 /* Model */,
+				63C8FDBF23FF000800086092 /* View */,
+				63C8FDBB23FEFFD000086092 /* Controller */,
+				63C8FDBA23FEFF9300086092 /* Support */,
 			);
 			path = "Quakes-Objc";
 			sourceTree = "<group>";
@@ -215,8 +281,9 @@
 		BDFC8F7523FDA09F00A39B21 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CAR;
 				LastUpgradeCheck = 1130;
-				ORGANIZATIONNAME = "Lambda, Inc";
+				ORGANIZATIONNAME = "Chad Rutherford";
 				TargetAttributes = {
 					BDFC8F7C23FDA09F00A39B21 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -275,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C8FDB623FEFCA900086092 /* CARQuakeFetcher.m in Sources */,
 				BDFC8FBD23FDA4FB00A39B21 /* LSIFirstResponder.m in Sources */,
 				BDFC8FB323FDA12B00A39B21 /* LSIFileHelper.m in Sources */,
 				BDFC8FB523FDA12B00A39B21 /* LSILog.m in Sources */,
@@ -285,6 +353,7 @@
 				BDFC8F8223FDA09F00A39B21 /* AppDelegate.m in Sources */,
 				BDFC8F9323FDA0A100A39B21 /* main.m in Sources */,
 				BDFC8F8523FDA09F00A39B21 /* SceneDelegate.m in Sources */,
+				63C8FDB923FEFF6800086092 /* CARQuakeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +518,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = "Quakes-Objc/Info.plist";
+				INFOPLIST_FILE = "Quakes-Objc/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VXUQXR6S56;
-				INFOPLIST_FILE = "Quakes-Objc/Info.plist";
+				INFOPLIST_FILE = "Quakes-Objc/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
